@@ -37,6 +37,7 @@ renderComments(comments){
                   </CardBody>
               </Card>
               </div>
+
               <div className="col-12 col-md-5 m-1">
                 <Card>
                     <CardBody>
@@ -45,7 +46,7 @@ renderComments(comments){
                     </CardBody>
                 </Card>
                 </div>
-              </div>
+                </div>
             );
     }else{
       return(<div> </div>);
@@ -55,8 +56,15 @@ renderComments(comments){
 
 render(){
 
-const r = this.renderDish(this.props.dish2);
-return(r);
+const r = this.renderDish(this.props.dish);
+
+return (
+    <div className="container">
+
+            {r}
+
+    </div>
+);
 
     }
 }
